@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="button_login">Ingresar</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_confirm_password">Confirmar contraseña</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_first_surname">Apellido paterno</string>
+    <string name="hint_second_surname">Apellido materno</string>
+    <string name="button_create">Crear</string>
+    <string name="toolbar_tittle_createaccount">Crear cuenta</string>
+</resources>

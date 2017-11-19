@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="app.housenow.com.housenow.view.ProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ablProfileAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/colorPrimary">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctlProfileCollapsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:statusBarScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="200dp"
+                android:paddingBottom="25dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txvProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jorge Argandoña"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/textsize_nameprofile"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.app.AlertController.RecycleListView
+        android:id="@+id/rlvProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v7.app.AlertController.RecycleListView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/imagecircle_profile"
+        android:layout_height="@dimen/imagecircle_profile"
+        android:src="@drawable/casa1"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/imagecircle_margintop_profile"
+        android:elevation="@dimen/imagecircle_elevation_profile"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:dependsOn="@id/ablProfileAppBar"
+        app:dependType="y"
+        app:dependTargetY="-206dp"
+        app:targetX="16dp"
+        app:targetY="-15dp"
+        app:targetWidth="40dp"
+        app:targetHeight="40dp"/>
+
+    <TextView
+        android:id="@+id/txvUsernameToolbarProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jorgito Argandoña"
+        android:textSize="20dp"
+        android:elevation="@dimen/imagecircle_elevation_profile"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="-10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimaryLight"
+        android:alpha="0"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:dependsOn="@id/ablProfileAppBar"
+        app:dependType="y"
+        app:dependTargetY="-250dp"
+        app:targetY="-5dp"
+        app:targetAlpha="1"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

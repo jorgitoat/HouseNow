@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cdvHouseCard"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_cardview_house"
+    cardview:cardCornerRadius="@dimen/cornerradius_cardview_house"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imvHouseImgCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_cardview_house"
+            android:background="@drawable/casa1"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/transitionname_picture"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/card_margin"
+            android:background="@color/colorBackroundTransparence">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_20"
+                    android:layout_height="@dimen/icon_20"
+                    android:background="@drawable/marker_white" />
+
+                <TextView
+                    android:id="@+id/txvCardHouseZoneProvinceCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Condebamba, Cercado, Cochcbamba"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/card_text"
+                    android:layout_marginLeft="@dimen/icon_space"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/card_margin">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_20"
+                    android:layout_height="@dimen/icon_20"
+                    android:background="@drawable/bedroom_white" />
+
+                <TextView
+                    android:id="@+id/txvCardHouseBedrooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 dormitorios"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/card_text"
+                    android:layout_marginLeft="@dimen/icon_space"/>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_20"
+                    android:layout_height="@dimen/icon_20"
+                    android:background="@drawable/bathroom_white"
+                    android:layout_marginLeft="@dimen/icon_20"/>
+
+                <TextView
+                    android:id="@+id/txvCardHouseBathrooms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 baños"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/card_text"
+                    android:layout_marginLeft="@dimen/icon_space"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txvCardHousePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50.000 $"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="@dimen/card_text_tittle" />
+
+                <CheckBox
+                    android:id="@+id/ckbCardHouseHeart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox_heart"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>
